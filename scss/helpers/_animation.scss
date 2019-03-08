@@ -1,0 +1,105 @@
+@keyframes lineAnimation_1 {
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lineAnimation_2 {
+
+  0% {
+    transform: rotate(14deg);
+  }
+
+  50% {
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes lineAnimation_3 {
+
+  0% {
+    opacity: 0;
+    transform: rotate(24deg);
+  }
+
+  55% {
+    opacity: .5;
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heartbeat1 {
+  0% {
+    transform: scale(.8);
+  }
+
+  20% {
+    transform: scale(.9);
+  }
+
+  40% {
+    transform: scale(.8);
+  }
+
+  60% {
+    transform: scale(.9);
+  }
+
+  80% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(.8);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(.8);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(.8);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(.8);
+  }
+}
+
+
+@keyframes showOff {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
