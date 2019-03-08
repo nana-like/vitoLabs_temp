@@ -57,15 +57,15 @@
 
       <div class="countdown">
         <div class="countdown__days">
-          <span class="countdown__number">28</span>
+          <span class="countdown__number">00</span>
           <span class="countdown__text">Days</span>
         </div>
         <div class="countdown__hours">
-          <span class="countdown__number">01</span>
+          <span class="countdown__number">00</span>
           <span class="countdown__text">Hours</span>
         </div>
         <div class="countdown__minutes">
-          <span class="countdown__number">56</span>
+          <span class="countdown__number">00</span>
           <span class="countdown__text">Minutes</span>
         </div>
       </div>
@@ -96,95 +96,12 @@
               fill="#ff9e8a" /></svg>
         </div>
       </div>
-      <!-- <div class="background__dark"></div> -->
 
     </div>
 
   </div>
   <div class="cursor"><span class="heart"></span></div>
-
-  <script>
-    //cursor event
-    const cursor = document.querySelector('.cursor');
-    const link = document.querySelector('.footer__link');
-    document.addEventListener('mousemove', function (e) {
-      cursor.style.setProperty("opacity", 1);
-      let x = e.clientX;
-      let y = e.clientY;
-      cursor.style.top = y + 'px';
-      cursor.style.left = x + "px";
-    });
-
-    link.addEventListener('mouseenter', function () {
-      cursor.classList.add('hover');
-    });
-
-    link.addEventListener('mouseleave', function () {
-      cursor.classList.remove('hover');
-    });
-
-
-    //유저에이전트 파악해서 IE/모바일일 경우 제거해야 함
-    if (navigator.userAgent.match(
-        'LG | SAMSUNG | Samsung | iPhone | iPod | Android | Windows CE | BlackBerry | Symbian | Windows Phone | webOS | Opera Mini | Opera Mobi | POLARIS | IEMobile | lgtelecom | nokia | SonyEricsson'
-      )) {
-      document.querySelector("body").classList.add("isMobile");
-    }
-
-    // data-agent 판단
-    document.documentElement.setAttribute("data-agent", navigator.userAgent);
-
-
-    var daysText = document.querySelector(".countdown__days .countdown__number"),
-      hoursText = document.querySelector(".countdown__hours .countdown__number"),
-      minutesText = document.querySelector(".countdown__minutes .countdown__number");
-    var countDownDate = new Date('2019-04-01T00:00:00+09:00').getTime();
-
-
-    function count() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-
-      var days = '0' + (Math.floor(distance / (1000 * 60 * 60 * 24)));
-      var hours = '0' + (Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-      var minutes = '0' + (Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-      var seconds = '0' + (Math.floor((distance % (1000 * 60)) / 1000));
-
-      days = days.slice(-2);
-      hours = hours.slice(-2);
-      minutes = minutes.slice(-2);
-      seconds = seconds.slice(-2);
-
-      if (distance < 0) {
-        clearInterval(x);
-        daysText.innerHTML = "00";
-        hoursText.innerHTML = "00";
-        minutesText.innerHTML = "00";
-      }
-
-      daysText.innerHTML = days;
-      hoursText.innerHTML = hours;
-      minutesText.innerHTML = minutes;
-    }
-
-    count();
-
-    var x = setInterval(function () {
-      count();
-
-    }, 1000);
-
-
-    // window.onload = function () {
-    //   document.querySelector(".wrap").classList.remove("veiled");
-    // };
-
-    window.addEventListener("load", function (e) {
-      document.querySelector(".wrap").classList.remove("veiled");
-      cursor.style.top = 0;
-      cursor.style.left = 0;
-    });
-  </script>
+  <script src="js/ui.js"></script>
 </body>
 
 </html>

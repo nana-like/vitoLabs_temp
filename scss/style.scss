@@ -5,10 +5,10 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/mediaQueries";
-@import "helpers/animation";
 
 @import "base/font";
 @import "base/reset";
 @import "base/common";
+@import "base/animation";
 
 @import "layout/main"

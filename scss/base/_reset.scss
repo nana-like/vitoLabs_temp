@@ -52,9 +52,6 @@ fieldset {
   box-sizing: border-box;
 }
 
-[tabindex="-1"]:focus {
-  outline: 0 !important;
-}
 
 ul,
 ol,
@@ -138,7 +135,6 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-border-radius: 0;
   background-color: transparent;
   border: 1px solid transparent;
 }
