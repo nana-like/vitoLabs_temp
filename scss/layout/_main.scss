@@ -194,30 +194,30 @@ html[data-agent*="Trident"] .header__image {
   bottom: 25px;
   left: 50%;
   @include transform(translateX(-50%));
-  font-size: 1vw;
+  font-size: 1.15vw;
   letter-spacing: 0.2em;
 
   @include res--desktop {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   @include res--laptop {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
   }
 
   @include res--mobile {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   &__link {
-    opacity: 0.3;
+    opacity: 0.5;
     // @include font-walkway;
     @include font-quicksand;
     transition: opacity 0.2s;
     cursor: none;
 
     &:hover {
-      opacity: 0.7;
+      opacity: 0.9;
       transition: opacity 0.2s;
     }
   }
