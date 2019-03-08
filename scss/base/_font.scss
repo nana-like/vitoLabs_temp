@@ -2,18 +2,6 @@
 
 // **** Font
 
-// 워크웨이
-$walkway: "Walkway";
-
-@font-face {
-  font-family: "Walkwaye";
-  font-weight: 400;
-  src: url(#{$path-font}#{$walkway}.eot);
-  src: url(#{$path-font}#{$walkway}.eot?#iefix) format('embedded-opentype'),
-  url(#{$path-font}#{$walkway}.woff2) format("woff2"),
-  url(#{$path-font}#{$walkway}.woff) format("woff");
-}
-
 // 뮤제오 산스
 $museo: "museosans";
 
@@ -22,7 +10,6 @@ $museo: "museosans";
   font-weight: 500;
   src: url(#{$path-font}#{$museo}.eot);
   src: url(#{$path-font}#{$museo}.eot?#iefix) format('embedded-opentype'),
-  url(#{$path-font}#{$museo}.woff2) format("woff2"),
   url(#{$path-font}#{$museo}.woff) format("woff");
 }
 
@@ -34,6 +21,5 @@ $quicksand: "quicksand";
   font-weight: 400;
   src: url(#{$path-font}#{$quicksand}.eot);
   src: url(#{$path-font}#{$quicksand}.eot?#iefix) format('embedded-opentype'),
-  url(#{$path-font}#{$quicksand}.woff2) format("woff2"),
   url(#{$path-font}#{$quicksand}.woff) format("woff");
 }
